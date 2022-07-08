@@ -1,10 +1,5 @@
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Router from "./Router";
-import { ReactQueryDevtools } from 'react-query/devtools';
-import { darkTheme, lightTheme } from "./theme";
-import { useState } from "react";
-import { useRecoilValue } from "recoil";
-import { isDarkAtom } from "./atoms";
+import { createGlobalStyle } from "styled-components";
+import ToDoList from "./ToDoList";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -58,31 +53,13 @@ const GlobalStyle = createGlobalStyle`
       border-spacing: 0;
     }
   }
-  body{
-    font-weight: 300;
-    font-family:'ONE-Mobile-Title', sans-serif;
-    background-color: ${props => props.theme.bgColor};
-    color: ${props => props.theme.textColor};
-    line-height: 1.2;
-  }
-  *{
-    box-sizing: border-box;
-  }
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
 `;
 
 function App() {
-  const isDark = useRecoilValue(isDarkAtom);
   return (
     <>
-      <ThemeProvider theme={ isDark ? darkTheme: lightTheme}>
       <GlobalStyle/>
-      <Router />
-      <ReactQueryDevtools initialIsOpen={true} />
-      </ThemeProvider>
+      <ToDoList/>
     </>
   );
 }
