@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import ToDoList from "./ToDoList";
+import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -35,7 +35,10 @@ const GlobalStyle = createGlobalStyle`
       display: block;
     }
     body {
+      font-family: 'ONE-Mobile-Title';
       line-height: 1;
+      background-color: #34495e;
+      color: white;
     }
     ol, ul {
       list-style: none;
