@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/React-ToDoList/static/js/main.849c74d3.js",
+    "main.js": "/React-ToDoList/static/js/main.124944d7.js",
     "index.html": "/React-ToDoList/index.html",
-    "main.849c74d3.js.map": "/React-ToDoList/static/js/main.849c74d3.js.map"
+    "main.124944d7.js.map": "/React-ToDoList/static/js/main.124944d7.js.map"
   },
   "entrypoints": [
-    "static/js/main.849c74d3.js"
+    "static/js/main.124944d7.js"
   ]
 }
